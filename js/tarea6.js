@@ -26,6 +26,16 @@ function nuevoAuto(){
     console.log(autoIngresado)
     desguace.push(autoIngresado)
 }
-
 nuevoAuto("");
+document.getElementById("BotonAgregarAuto").onclick = function (){
+    nuevoAuto();
+}
+
+function borrarAuto(){
+    let borrarAuto = parseInt(prompt("Ingrese el ID del auto que desea borrar(el ID se encuentra en el console.log)"))
+    desguace.splice(borrarAuto)
+}
+document.getElementById("BotonBorrarAuto").onclick = function (){
+    borrarAuto();
+}
 
