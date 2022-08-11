@@ -8,11 +8,32 @@
     </head>
     <body>
         
-        <div>
+        <div id="div-textos">
             <h2>Esta es una interfaz aun muy primitiva pronto se iran mejorando</h2>
-            <button id="BotonAgregarAuto">Agregar un nuevo auto</button>
             <button id="BotonBorrarAuto">Borrar un auto de la lista</button>
+            <button id="MostrarCatalogo"> Mostrar Catalogo (console log)</button>
         </div>
-        <script type="text/javascript" src="js/tarea6.js"></script>
+        
+        <form>
+            <label for="marca">Ingrese la marca del auto:</label><br>
+            <input type="text" id="marcaInput"
+            name="marca"><br>
+            <label for="modelo">Ingrese el modelo del auto:</label><br>
+            <input type="text" id="modeloInput"
+            name="modelo"><br>
+            <label for="año">Ingrese el año del auto:</label><br>
+            <input type="text" id="añoInput"
+            name="año"><br>
+            <label for="color">Ingrese el color del auto:</label><br>
+            <input type="text" id="colorInput"
+            name="color"><br>
+
+        </form>
+        <button id="guardarAutoBtn">Guardar auto</button>
+        <button id="verCatalogo">Ver catalogo de autos</button>
+        <button id="ocultarCatalogo">Ocultar catalogo de autos</button>
+        <div id="listado"></div>
+
+        <script type="text/javascript" src="js/tarea9.js"></script>
     </body>
 </html>
