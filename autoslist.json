@@ -1,0 +1,212 @@
+[
+    {
+        "id":1 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "celta",
+        "añoAuto": 2007,
+        "colorAuto": "rojo"
+    },
+    {
+        "id":2 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "corvette",
+        "añoAuto": 2012,
+        "colorAuto": "blanco"
+    },    
+    {
+        "id":3 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "camaro",
+        "añoAuto": 2010,
+        "colorAuto": "amarillo"
+    },
+    {
+        "id":4 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "impala",
+        "añoAuto": 2013,
+        "colorAuto": "verde"
+    }, 
+    {
+        "id":5 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "celta",
+        "añoAuto": 2007,
+        "colorAuto": "rojo"
+    }, 
+    {
+        "id":6 ,
+        "marcaAuto": "chevrolet" ,
+        "modeloAuto": "suburban",
+        "añoAuto": 2005,
+        "colorAuto": "negro"
+    }, 
+    {
+        "id":7 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "gol",
+        "añoAuto": 2009,
+        "colorAuto": "azul"
+    }, 
+    {
+        "id":8 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "golf",
+        "añoAuto": 2008,
+        "colorAuto": "negro"
+    }, 
+    {
+        "id":9 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "new beetle",
+        "añoAuto": 2010,
+        "colorAuto": "amarillo"
+    }, 
+    {
+        "id":10 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "bora",
+        "añoAuto": 2011,
+        "colorAuto": "blanco"
+    }, 
+    {
+        "id":11 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "tiguan",
+        "añoAuto": 2018,
+        "colorAuto": "gris"
+    }, 
+    {
+        "id":12 ,
+        "marcaAuto": "volkswagen" ,
+        "modeloAuto": "amarok",
+        "añoAuto": 2020,
+        "colorAuto": "blanco"
+    }, 
+    {
+        "id":13 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "celta",
+        "añoAuto": 2007,
+        "colorAuto": "rojo"
+    }, 
+    {
+        "id":14 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "duster",
+        "añoAuto": 20018,
+        "colorAuto": "gris"
+    }, 
+    {
+        "id":15 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "clio",
+        "añoAuto": 2014,
+        "colorAuto": "blanco"
+    }, 
+    {
+        "id":16 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "fluence",
+        "añoAuto": 2015,
+        "colorAuto": "rojo"
+    }, 
+    {
+        "id":17 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "megane",
+        "añoAuto": 1998,
+        "colorAuto": "azul"
+    }, 
+    {
+        "id":18 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "kangoo",
+        "añoAuto": 2010,
+        "colorAuto": "gris"
+    }, 
+    {
+        "id":19 ,
+        "marcaAuto": "renault" ,
+        "modeloAuto": "captur",
+        "añoAuto": 2016,
+        "colorAuto": "verde"
+    }, 
+    {
+        "id":20 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "focus",
+        "añoAuto": 2015,
+        "colorAuto": "blanco"
+    }, 
+    {
+        "id":21 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "ranger",
+        "añoAuto": 2013,
+        "colorAuto": "azul"
+    }, 
+    {
+        "id":22 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "ranger",
+        "añoAuto": 2021,
+        "colorAuto": "negro"
+    }, 
+    {
+        "id":23 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "fiesta",
+        "añoAuto": 2014,
+        "colorAuto": "gris"
+    }, 
+    {
+        "id":24 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "eco sport",
+        "añoAuto": 2018,
+        "colorAuto": "azul"
+    }, 
+    {
+        "id":25 ,
+        "marcaAuto": "ford" ,
+        "modeloAuto": "kinetic",
+        "añoAuto": 2019,
+        "colorAuto": "rojo"
+    }, 
+    {
+        "id":26 ,
+        "marcaAuto": "toyota" ,
+        "modeloAuto": "corolla",
+        "añoAuto": 2015,
+        "colorAuto": "gris"
+    }, 
+    {
+        "id":27 ,
+        "marcaAuto": "toyota" ,
+        "modeloAuto": "prius",
+        "añoAuto": 2012,
+        "colorAuto": "blanco"
+    }, 
+    {
+        "id":28 ,
+        "marcaAuto": "toyota" ,
+        "modeloAuto": "etios",
+        "añoAuto": 2016,
+        "colorAuto": "negro"
+    }, 
+    {
+        "id":29 ,
+        "marcaAuto": "toyota" ,
+        "modeloAuto": "hilux",
+        "añoAuto": 2021,
+        "colorAuto": "rojo"
+    },
+    {
+        "id":30 ,
+        "marcaAuto": "toyota" ,
+        "modeloAuto": "yaris",
+        "añoAuto": 2014,
+        "colorAuto": "negro"
+    }  
+]
