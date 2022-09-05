@@ -1,5 +1,21 @@
-// declaro clase
+// librerias
 
+
+const btn = document.querySelector('#myBtn')
+btn.addEventListener('click', () => {
+
+    swal.fire ({
+        title: "Bien echo!", 
+        text: "Lograste hacer click!, prueba seguir haciendo click sobre los otros carteles para realizar nuevas funciones", 
+        confirmButtomText: "success"})
+
+})
+
+
+
+
+// declaro clase
+// JS 
 class autos{
     constructor(id,marcaAuto,modeloAuto,añoAuto,colorAuto){
         this.id = id,
@@ -16,27 +32,31 @@ class autos{
 }
 
 // agrego manualmente para tener ejemplos
-const auto1 = new autos(1,"chevrolet","celta",2015,"rojo")
+//const auto1 = new autos(1,"chevrolet","celta",2015,"rojo")
 
-const auto2 = new autos(2,"volkswagen","gol",2012,"azul")
+//const auto2 = new autos(2,"volkswagen","gol",2012,"azul")
 
-const auto3 = new autos(3,"renault","clio",2019,"blanco")
+//const auto3 = new autos(3,"renault","clio",2019,"blanco")
 
-const auto4 = new autos(4,"ford","ka",2018,"negro")
+//const auto4 = new autos(4,"ford","ka",2018,"negro")
 
-const desguache = [auto1,auto2,auto3,auto4]
+//const desguache = [auto1,auto2,auto3,auto4]
+
 
 let divListado = document.getElementById("listado")
 divListado.setAttribute("class", "listadoEstilos")
 function mostrarCatalogo(){
     
-    desguache.forEach((auto)=>{
-        let nuevoAuto = document.createElement("div")
-        nuevoAuto.innerHTML = `<div><h4>ID del auto: ${auto.id}, marca del auto: ${auto.marcaAuto}, modelo del auto: ${auto.modeloAuto}, año del auto: ${auto.añoAuto}, color del auto: <b>${auto.colorAuto}</b></h4></div><br> `
-        divListado.appendChild(nuevoAuto)
-    })
+`
+                <h3>${modeloInput.value}</h3> 
+                <p>${marcaInput.value}, ${añoInput.value}, ${colorInput.value}</p>
+                <p>ID del auto: ${id.value}</p><br>
+            
+            `
+            divListado.appendChild(nuevoAuto)
+    }
 
-}
+
 function ocultarCatalogo(){
     divListado.innerHTML =""
 }
@@ -45,6 +65,24 @@ mostrarCatalogoBtn.addEventListener("click", mostrarCatalogo)
 
 let ocultarCatalogoBtn = document.getElementById("ocultarCatalogo")
 ocultarCatalogoBtn.onclick = ocultarCatalogo
+// autolist json
+const desguache = document.querySelector('listado')
+
+fetch('/autoslist.json')
+    .then(resp => resp.json())
+    .then((data) => {
+        
+        for(let auto of data){
+            let nuevoAuto = document.createElement("div")
+                    nuevoAuto.innerHTML = `
+                    <h3>${auto.modeloAuto}</h3> 
+                    <p>${auto.marcaAuto}, ${auto.añoAuto}, ${auto.colorAuto}</p>
+                    <p>ID del auto: ${auto.id}</p><br>
+                
+                `
+                divListado.appendChild(nuevoAuto)
+        }
+    })
 
 // agregar auto
 
