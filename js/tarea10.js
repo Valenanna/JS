@@ -42,18 +42,29 @@ class autos{
 
 //const desguache = [auto1,auto2,auto3,auto4]
 
+// autolist json
+const desguache = []
+
+fetch('/autoslist.json')
+    .then(resp => resp.json())
+    .then((data) => {
+        console.log(data)
+        for(let auto of data){
+            let nuevoAuto = new autos(auto.id,auto.marcaAuto,auto.modeloAuto,auto.añoAuto,auto.colorAuto)
+            desguache.push(nuevoAuto)
+        }
+    })
+
 
 let divListado = document.getElementById("listado")
 divListado.setAttribute("class", "listadoEstilos")
 function mostrarCatalogo(){
     
-`
-                <h3>${modeloInput.value}</h3> 
-                <p>${marcaInput.value}, ${añoInput.value}, ${colorInput.value}</p>
-                <p>ID del auto: ${id.value}</p><br>
-            
-            `
-            divListado.appendChild(nuevoAuto)
+    desguache.forEach((auto)=>{
+        let nuevoAuto = document.createElement("div")
+        nuevoAuto.innerHTML = `<div><h4>ID del auto: ${auto.id}, marca del auto: ${auto.marcaAuto}, modelo del auto: ${auto.modeloAuto}, año del auto: ${auto.añoAuto}, color del auto:<b>${auto.colorAuto}</b></h4></div><br> `
+        divListado.appendChild(nuevoAuto)
+    })
     }
 
 
@@ -65,24 +76,7 @@ mostrarCatalogoBtn.addEventListener("click", mostrarCatalogo)
 
 let ocultarCatalogoBtn = document.getElementById("ocultarCatalogo")
 ocultarCatalogoBtn.onclick = ocultarCatalogo
-// autolist json
-const desguache = document.querySelector('listado')
 
-fetch('/autoslist.json')
-    .then(resp => resp.json())
-    .then((data) => {
-        
-        for(let auto of data){
-            let nuevoAuto = document.createElement("div")
-                    nuevoAuto.innerHTML = `
-                    <h3>${auto.modeloAuto}</h3> 
-                    <p>${auto.marcaAuto}, ${auto.añoAuto}, ${auto.colorAuto}</p>
-                    <p>ID del auto: ${auto.id}</p><br>
-                
-                `
-                divListado.appendChild(nuevoAuto)
-        }
-    })
 
 // agregar auto
 
